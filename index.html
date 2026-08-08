@@ -377,35 +377,43 @@
             <h2>Let's Work Together</h2>
         </div>
 
-        <div class="contact-container">
+        ```html
+        <div class="contact-info">
 
-            <div class="contact-info">
+            <h3>Get In Touch</h3>
 
-                <h3>Get In Touch</h3>
+            <p>
+                Feel free to contact me for projects, internships or collaborations.
+            </p>
 
-                <p>
-                    Feel free to contact me for projects, internships or collaborations.
-                </p>
+            <p>
+                <i class="fas fa-envelope"></i> karkisushma2062@gmail.com
+            </p>
 
-                <p><i class="fas fa-envelope"></i> karkisushma2062@gmail.com</p>
+            <p>
+                <i class="fas fa-location-dot"></i> Nepal
+            </p>
 
-                <p><i class="fas fa-location-dot"></i> Nepal</p>
+        </div>
 
-            </div>
 
-            <form>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-                <input type="text" placeholder="Your Name">
+            <input type="text" name="name" placeholder="Your Name" required>
 
-                <input type="email" placeholder="Your Email">
+            <input type="email" name="email" placeholder="Your Email" required>
 
-                <input type="text" placeholder="Subject">
+            <input type="text" name="subject" placeholder="Subject" required>
 
-                <textarea rows="6" placeholder="Message"></textarea>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
 
-                <button type="submit">Send Message</button>
+            <button type="submit">
+        Send Message
+    </button>
 
-            </form>
+        </form>
+        ```
+
 
         </div>
 
