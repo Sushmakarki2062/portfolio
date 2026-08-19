@@ -731,6 +731,9 @@ button {
 .spss-bg { background: rgba(168, 85, 247, 0.15); color: #a855f7; }
 .c-bg { background: rgba(59, 130, 246, 0.15); color: #3b82f6; }
 .java-bg { background: rgba(234, 67, 53, 0.15); color: #ea4335; }
+.ps-bg { background: rgba(49, 168, 255, 0.15); color: #31a8ff; }
+.canva-bg { background: rgba(0, 196, 204, 0.15); color: #00c4cc; }
+.ms-bg { background: rgba(216, 59, 1, 0.15); color: #d83b01; }
 
 .skill-title {
     font-size: 1.1rem;
