@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Sushma Karki | Portfolio</title>
+    <meta name="description" content="Sushma Karki | BCA Student, Web Developer, Frontend & PHP Developer Portfolio">
+    <title>Sushma Karki | Modern Web Developer & UI Designer</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -21,36 +23,45 @@
 
 <body>
 
+    <!-- Ambient Glowing Cursor Follower -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Dynamic Particle Canvas Background -->
+    <canvas id="particle-canvas"></canvas>
+
     <!-- ================= NAVBAR ================= -->
 
     <header id="home">
 
         <nav class="navbar">
 
-            <div class="logo">
-                Sushma<span>.</span>
-            </div>
+            <a href="#home" class="logo">
+                Sushma<span class="logo-dot">.</span>
+            </a>
 
             <ul class="nav-links">
 
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="nav-item active">Home</a></li>
 
-                <li><a href="#about">About</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
 
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
 
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services" class="nav-item">Services</a></li>
 
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
 
-                <li><a href="#education">Education</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-item">Contact</a></li>
 
             </ul>
 
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <a href="#contact" class="btn-nav">Hire Me</a>
+                <div class="menu-btn" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
 
         </nav>
@@ -64,51 +75,64 @@
 
         <div class="hero-left">
 
+            <div class="status-badge">
+                <span class="pulse-dot"></span>
+                <span>Available for Freelance & Internships</span>
+            </div>
+
             <p class="hello">
                 Hello, I'm
             </p>
 
-            <h1>
-                Sushma Karki
+            <h1 class="hero-title">
+                Sushma <span class="gradient-text">Karki</span>
             </h1>
 
-            <h2>
-                <span id="typing"></span>
+            <h2 class="hero-subtitle">
+                <span class="subtitle-prefix">I am a </span><span id="typing"></span><span class="typing-cursor">|</span>
             </h2>
 
             <p class="hero-description">
-
-                Passionate BCA student dedicated to creating beautiful, responsive and user-friendly web applications. I enjoy solving real-world problems through technology and continuously learning new skills.
-
+                Passionate BCA student dedicated to crafting modern, ultra-responsive, and visually captivating web experiences. I bring creative ideas to life with clean code and intuitive UI design.
             </p>
+
+            <div class="hero-tech-tags">
+                <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                <span class="tech-tag"><i class="fab fa-js"></i> JS</span>
+                <span class="tech-tag"><i class="fab fa-php"></i> PHP</span>
+                <span class="tech-tag"><i class="fab fa-figma"></i> Figma</span>
+            </div>
 
             <div class="hero-buttons">
 
-                <a href="#projects" class="btn">
-                    View Projects
+                <a href="#projects" class="btn btn-primary">
+                    <span>View Projects</span>
+                    <i class="fas fa-arrow-right"></i>
                 </a>
 
-                <a href="cv.pdf" class="btn-outline">
-                    Download CV
+                <a href="cv.pdf" class="btn btn-outline" download>
+                    <i class="fas fa-download"></i>
+                    <span>Download CV</span>
                 </a>
 
             </div>
 
             <div class="social-icons">
 
-                <a href="https://github.com/Sushmakarki2062">
+                <a href="https://github.com/Sushmakarki2062" target="_blank" aria-label="GitHub">
                     <i class="fab fa-github"></i>
                 </a>
 
-                <a href="https://www.linkedin.com/in/sushma-karki">
+                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank" aria-label="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
 
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
                     <i class="fab fa-facebook"></i>
                 </a>
 
-                <a href="https://www.instagram.com/sushmakarki06/">
+                <a href="https://www.instagram.com/sushmakarki06/" target="_blank" aria-label="Instagram">
                     <i class="fab fa-instagram"></i>
                 </a>
 
@@ -118,13 +142,38 @@
 
         <div class="hero-right">
 
-            <div class="image-box">
+            <div class="image-wrapper">
 
-                <img src="sushma.jpg" alt="Sushma Karki">
+                <div class="glowing-ring"></div>
+                <div class="glowing-ring-outer"></div>
+
+                <div class="image-box">
+                    <img src="sushma.jpg" alt="Sushma Karki">
+                </div>
+
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-code"></i>
+                    <div>
+                        <strong>Web Dev</strong>
+                        <span>Frontend & PHP</span>
+                    </div>
+                </div>
+
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <strong>BCA Student</strong>
+                        <span>4th Semester</span>
+                    </div>
+                </div>
 
             </div>
 
         </div>
+
+        <a href="#about" class="scroll-down-btn" aria-label="Scroll Down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
 
     </section>
 
@@ -135,50 +184,67 @@
 
         <div class="about-image">
 
-            <img src="web.jpg" alt="About">
+            <div class="about-img-frame">
+                <img src="web.jpg" alt="Sushma Karki Coding">
+                <div class="frame-backdrop"></div>
+            </div>
 
         </div>
 
         <div class="about-content">
 
-            <span class="section-title">
-                ABOUT ME
-            </span>
+            <div class="section-tag">
+                <i class="fas fa-user"></i>
+                <span>ABOUT ME</span>
+            </div>
 
-            <h2>
-                Turning Ideas into Digital Reality
+            <h2 class="section-heading-text">
+                Turning Creative Ideas into <span class="gradient-text">Digital Reality</span>
             </h2>
 
-            <p>
-
-                Hello! I'm <b>Sushma Karki</b>, currently pursuing my Bachelor in Computer Application (BCA). I enjoy learning new technologies, building modern websites, solving programming challenges and designing attractive user interfaces.
-
+            <p class="about-text">
+                Hello! I'm <b>Sushma Karki</b>, currently pursuing a Bachelor in Computer Application (BCA). I specialize in creating clean, fast, and responsive web applications with modern design principles and dynamic interactive elements.
             </p>
 
-            <div class="about-info">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="4">4th</span>
+                    <span class="stat-label">Semester BCA</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="10">10+</span>
+                    <span class="stat-label">Projects Built</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" data-target="100">100%</span>
+                    <span class="stat-label">Commitment</span>
+                </div>
+            </div>
 
-                <div>
+            <div class="about-info-grid">
 
-                    <h3>Location</h3>
-
-                    <p>Nepal</p>
-
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-location-dot"></i></div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Kathmandu, Nepal</p>
+                    </div>
                 </div>
 
-                <div>
-
-                    <h3>Degree</h3>
-
-                    <p>BCA</p>
-
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div>
+                        <h3>Degree</h3>
+                        <p>BCA (TU)</p>
+                    </div>
                 </div>
 
-                <div>
-
-                    <h3>Email</h3>
-
-                    <p>sushmakarki2062@gmail.com</p>
-
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>sushmakarki2062@gmail.com</p>
+                    </div>
                 </div>
 
             </div>
@@ -188,117 +254,136 @@
     </section>
 
 
-    <!-- Skills, Services, Projects, Education,
-         Contact and Footer will come in Part-2 -->
-
     <!-- ================= SKILLS ================= -->
 
     <section class="skills" id="skills">
 
         <div class="section-heading">
+            <div class="section-tag">
+                <i class="fas fa-layer-group"></i>
+                <span>MY SKILLS</span>
+            </div>
+            <h2>Technical & Creative <span class="gradient-text">Proficiency</span></h2>
+            <p class="section-subtext">Technologies and tools I use to build seamless web applications</p>
+        </div>
 
-            <span>MY SKILLS</span>
-
-            <h2>Technical Skills</h2>
-
+        <div class="skills-filter">
+            <button class="filter-btn active" data-filter="all">All Skills</button>
+            <button class="filter-btn" data-filter="frontend">Frontend</button>
+            <button class="filter-btn" data-filter="backend">Backend & DB</button>
+            <button class="filter-btn" data-filter="design">Design & Tools</button>
         </div>
 
         <div class="skills-container">
 
-            <div class="skill-card">
-
-                <i class="fab fa-html5"></i>
-
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-icon html-icon">
+                    <i class="fab fa-html5"></i>
+                </div>
                 <h3>HTML5</h3>
-
-                <p>Semantic & Responsive Web Design</p>
-
+                <p>Semantic & Responsive Structure</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 92%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fab fa-css3-alt"></i>
-
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-icon css-icon">
+                    <i class="fab fa-css3-alt"></i>
+                </div>
                 <h3>CSS3</h3>
-
-                <p>Modern UI & Animations</p>
-
+                <p>Modern UI, Flexbox, Grid & Animations</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 88%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fab fa-js"></i>
-
+            <div class="skill-card" data-category="frontend">
+                <div class="skill-icon js-icon">
+                    <i class="fab fa-js"></i>
+                </div>
                 <h3>JavaScript</h3>
-
-                <p>Interactive Websites</p>
-
+                <p>ES6+, DOM Manipulation & Dynamic Logic</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fab fa-php"></i>
-
+            <div class="skill-card" data-category="backend">
+                <div class="skill-icon php-icon">
+                    <i class="fab fa-php"></i>
+                </div>
                 <h3>PHP</h3>
-
-                <p>Backend Development</p>
-
+                <p>Server-side Logic & Forms</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fas fa-database"></i>
-
+            <div class="skill-card" data-category="backend">
+                <div class="skill-icon db-icon">
+                    <i class="fas fa-database"></i>
+                </div>
                 <h3>MySQL</h3>
-
-                <p>Database Management</p>
-
+                <p>Relational Database & Queries</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 78%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fab fa-java"></i>
-
+            <div class="skill-card" data-category="backend">
+                <div class="skill-icon java-icon">
+                    <i class="fab fa-java"></i>
+                </div>
                 <h3>Java</h3>
-
                 <p>Object Oriented Programming</p>
-
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
-
-                <i class="fas fa-chart-line"></i>
-
-                <h3>SPSS</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fas fa-palette"></i>
-
-                <h3>Canva</h3>
-
-            </div>
-
-            <div class="skill-card">
-
-                <i class="fab fa-figma"></i>
-
+            <div class="skill-card" data-category="design">
+                <div class="skill-icon figma-icon">
+                    <i class="fab fa-figma"></i>
+                </div>
                 <h3>Figma</h3>
-
                 <p>UI/UX Design & Prototyping</p>
-
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
             </div>
 
-            <div class="skill-card">
+            <div class="skill-card" data-category="design">
+                <div class="skill-icon canva-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>Canva</h3>
+                <p>Graphic Design & Branding</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
+            </div>
 
-                <i class="fas fa-calculator"></i>
+            <div class="skill-card" data-category="design">
+                <div class="skill-icon spss-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>SPSS</h3>
+                <p>Statistical Data Analysis</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 72%;"></div>
+                </div>
+            </div>
 
+            <div class="skill-card" data-category="design">
+                <div class="skill-icon tally-icon">
+                    <i class="fas fa-calculator"></i>
+                </div>
                 <h3>Tally Prime</h3>
-
-                <p>Accounting & Inventory Management</p>
-
+                <p>Accounting & Inventory</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%;"></div>
+                </div>
             </div>
 
         </div>
@@ -311,43 +396,53 @@
     <section class="services" id="services">
 
         <div class="section-heading">
-
-            <span>WHAT I DO</span>
-
-            <h2>My Services</h2>
-
+            <div class="section-tag">
+                <i class="fas fa-concierge-bell"></i>
+                <span>WHAT I DO</span>
+            </div>
+            <h2>Services I <span class="gradient-text">Provide</span></h2>
+            <p class="section-subtext">Delivering tailored web solutions with visual excellence and clean code</p>
         </div>
 
         <div class="service-container">
 
             <div class="service-card">
-
-                <i class="fas fa-laptop-code"></i>
-
-                <h3>Web Design</h3>
-
-                <p>Create modern, responsive and attractive websites.</p>
-
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Design & UI/UX</h3>
+                <p>Designing elegant, user-centric website interfaces with modern layouts, glassmorphism aesthetics, and mobile responsiveness.</p>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Responsive Wireframes</li>
+                    <li><i class="fas fa-check"></i> Interactive Prototypes</li>
+                    <li><i class="fas fa-check"></i> Clean Color Systems</li>
+                </ul>
             </div>
 
             <div class="service-card">
-
-                <i class="fas fa-code"></i>
-
+                <div class="service-icon">
+                    <i class="fas fa-code"></i>
+                </div>
                 <h3>Frontend Development</h3>
-
-                <p>Responsive websites using HTML, CSS and JavaScript.</p>
-
+                <p>Converting design ideas into fast, accessible, interactive web pages using HTML5, CSS3, JavaScript and modern micro-animations.</p>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> Mobile First Design</li>
+                    <li><i class="fas fa-check"></i> CSS & JS Animations</li>
+                    <li><i class="fas fa-check"></i> Cross-browser Support</li>
+                </ul>
             </div>
 
             <div class="service-card">
-
-                <i class="fas fa-server"></i>
-
-                <h3>Backend Development</h3>
-
-                <p>PHP & MySQL based web applications.</p>
-
+                <div class="service-icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <h3>Backend & Database</h3>
+                <p>Building secure server-side logic, contact form integrations, dynamic database tables, and authentication with PHP & MySQL.</p>
+                <ul class="service-list">
+                    <li><i class="fas fa-check"></i> PHP Form Handler</li>
+                    <li><i class="fas fa-check"></i> MySQL Integration</li>
+                    <li><i class="fas fa-check"></i> Data Security</li>
+                </ul>
             </div>
 
         </div>
@@ -360,28 +455,45 @@
     <section class="projects" id="projects">
 
         <div class="section-heading">
-
-            <span>MY WORK</span>
-
-            <h2>Latest Projects</h2>
-
+            <div class="section-tag">
+                <i class="fas fa-briefcase"></i>
+                <span>MY WORK</span>
+            </div>
+            <h2>Featured <span class="gradient-text">Projects</span></h2>
+            <p class="section-subtext">A selection of recent web development projects and implementations</p>
         </div>
 
         <div class="project-container">
 
             <div class="project-card">
 
-                <img src="images/project1.jpg" alt="Project">
+                <div class="project-img-wrapper">
+                    <img src="earth_smart.png" alt="Earth Smart Overseas">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Sushmakarki2062" target="_blank" class="overlay-btn" aria-label="GitHub Code"><i class="fab fa-github"></i></a>
+                        <a href="#" class="overlay-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
                 <div class="project-info">
+
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
 
                     <h3>Earth Smart Overseas</h3>
 
                     <p>
-                        Website using HTML, CSS, JavaScript & PHP.
+                        A professional consultancy platform built with dynamic PHP backend, contact forms, and responsive design.
                     </p>
 
-                    <a href="#" class="project-btn">View Project</a>
+                    <a href="#" class="project-link">
+                        <span>Explore Details</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
@@ -389,17 +501,32 @@
 
             <div class="project-card">
 
-                <img src="project.png" alt="Project">
+                <div class="project-img-wrapper">
+                    <img src="project.png" alt="Portfolio Website">
+                    <div class="project-overlay">
+                        <a href="https://github.com/Sushmakarki2062" target="_blank" class="overlay-btn" aria-label="GitHub Code"><i class="fab fa-github"></i></a>
+                        <a href="https://sushmakarki62.com.np/" target="_blank" class="overlay-btn" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
 
                 <div class="project-info">
 
-                    <h3>Portfolio Website</h3>
+                    <div class="project-tags">
+                        <span>Glassmorphism</span>
+                        <span>JavaScript</span>
+                        <span>Canvas API</span>
+                    </div>
+
+                    <h3>Personal Portfolio Website</h3>
 
                     <p>
-                        Personal Portfolio with modern UI and responsive design.
+                        State-of-the-art interactive developer portfolio featuring dark glass aesthetics, dynamic animations, and responsive layout.
                     </p>
 
-                    <a href="https://sushmakarki62.com.np/" class="project-btn">View Project</a>
+                    <a href="https://sushmakarki62.com.np/" target="_blank" class="project-link">
+                        <span>Live Preview</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
 
                 </div>
 
@@ -415,28 +542,39 @@
     <section class="education" id="education">
 
         <div class="section-heading">
-
-            <span>MY EDUCATION</span>
-
-            <h2>Education Journey</h2>
-
+            <div class="section-tag">
+                <i class="fas fa-user-graduate"></i>
+                <span>MY EDUCATION</span>
+            </div>
+            <h2>Education <span class="gradient-text">Journey</span></h2>
+            <p class="section-subtext">My academic background and computer application studies</p>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline">
 
-            <h3>+2, Science</h3>
+            <div class="timeline-item">
+                <div class="timeline-badge">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-year">Currently Enrolled</span>
+                    <h3>Bachelor in Computer Application (BCA)</h3>
+                    <h4>Golden Gate International College, Battisputali</h4>
+                    <p>Studying Core Programming, Data Structures, Web Technology, Database Systems, Java & Software Engineering. Currently in 4th Semester.</p>
+                </div>
+            </div>
 
-            <p>Golden Gate international College,Battisputali</p>
-
-        </div>
-
-        <div class="timeline-item">
-
-            <h3>Bachelor in Computer Application</h3>
-
-            <p>Golden Gate international College,Battisputali</p>
-
-            <p>Currently Studying 4th Semester</p>
+            <div class="timeline-item">
+                <div class="timeline-badge">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <span class="timeline-year">Higher Secondary</span>
+                    <h3>+2 Science Stream</h3>
+                    <h4>Golden Gate International College, Battisputali</h4>
+                    <p>Completed higher secondary education in Science with focus on Physics, Mathematics, Chemistry, and Computer Science fundamentals.</p>
+                </div>
+            </div>
 
         </div>
 
@@ -448,44 +586,97 @@
     <section class="contact" id="contact">
 
         <div class="section-heading">
-
-            <span>CONTACT ME</span>
-
-            <h2>Let's Work Together</h2>
-
+            <div class="section-tag">
+                <i class="fas fa-paper-plane"></i>
+                <span>CONTACT ME</span>
+            </div>
+            <h2>Let's Build Something <span class="gradient-text">Awesome</span></h2>
+            <p class="section-subtext">Have a project, internship offer, or question? Send me a message!</p>
         </div>
 
-        <div class="contact-info">
+        <div class="contact-container">
 
-            <p>
-                Feel free to contact me for projects, internships or collaborations.
-            </p>
+            <div class="contact-info">
 
-            <p>
-                <i class="fas fa-envelope"></i> karkisushma2062@gmail.com
-            </p>
+                <h3>Get In Touch</h3>
+                <p>
+                    I am actively seeking web development opportunities, internships, and freelance projects. Feel free to reach out anytime!
+                </p>
 
-            <p>
-                <i class="fas fa-location-dot"></i> Nepal
-            </p>
+                <div class="contact-cards">
+
+                    <div class="c-card">
+                        <div class="c-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <span>Email Me</span>
+                            <strong>karkisushma2062@gmail.com</strong>
+                        </div>
+                    </div>
+
+                    <div class="c-card">
+                        <div class="c-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <span>Location</span>
+                            <strong>Kathmandu, Nepal</strong>
+                        </div>
+                    </div>
+
+                    <div class="c-card">
+                        <div class="c-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <span>Response Time</span>
+                            <strong>Within 24 Hours</strong>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-social">
+                    <span>Connect Socially:</span>
+                    <div class="social-links-row">
+                        <a href="https://github.com/Sushmakarki2062" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sushma-karki" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/itsmesushmaaa" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/sushmakarki06" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-form-box">
+
+                <form action="https://formspree.io/f/xoeajnro" method="POST" id="contactForm">
+
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project Inquiry / Job Offer" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Hi Sushma, I'd like to discuss..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+
+                </form>
+
+            </div>
 
         </div>
-
-        <form action="https://formspree.io/f/xoeajnro" method="POST">
-
-            <input type="text" name="name" placeholder="Your Name" required>
-
-            <input type="email" name="email" placeholder="Your Email" required>
-
-            <input type="text" name="subject" placeholder="Subject" required>
-
-            <textarea name="message" rows="6" placeholder="Message" required></textarea>
-
-            <button type="submit">
-                Send Message
-            </button>
-
-        </form>
 
     </section>
 
@@ -494,38 +685,43 @@
 
     <footer>
 
-        <h2>Sushma Karki</h2>
+        <div class="footer-content">
 
-        <p>
-            BCA Student | Web Developer
-        </p>
+            <div class="footer-brand">
+                <a href="#home" class="logo">Sushma<span class="logo-dot">.</span></a>
+                <p>BCA Student & Web Developer crafting beautiful web experiences.</p>
+            </div>
 
-        <div class="footer-social">
+            <div class="footer-social">
 
-            <a href="https://github.com/Sushmakarki2062">
-                <i class="fab fa-github"></i>
-            </a>
+                <a href="https://github.com/Sushmakarki2062" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
 
-            <a href="https://www.linkedin.com/in/sushma-karki">
-                <i class="fab fa-linkedin"></i>
-            </a>
+                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
 
-            <a href="https://www.facebook.com/itsmesushmaaa">
-                <i class="fab fa-facebook"></i>
-            </a>
+                <a href="https://www.facebook.com/itsmesushmaaa" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
 
-            <a href="https://www.instagram.com/sushmakarki06">
-                <i class=" fab fa-instagram "></i>
-            </a>
+                <a href="https://www.instagram.com/sushmakarki06" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+            </div>
 
         </div>
 
-        <p class="copyright">
-            © 2026 Sushma Karki. All Rights Reserved.
-        </p>
+        <div class="footer-bottom">
+            <p class="copyright">
+                © 2026 Sushma Karki. All Rights Reserved. Crafted with <i class="fas fa-heart heart-icon"></i>
+            </p>
+        </div>
 
     </footer>
 
 </body>
 
-</html>
+</html>
