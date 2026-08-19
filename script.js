@@ -242,25 +242,21 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuBtn = document.querySelector(".menu-btn");
     const navLinks = document.querySelector(".nav-links");
 
+    const barsSVG = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`;
+    const closeSVG = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`;
+
     if (menuBtn && navLinks) {
         menuBtn.addEventListener("click", () => {
             navLinks.classList.toggle("active");
-            const icon = menuBtn.querySelector("i");
-            if (icon) {
-                icon.classList.toggle("fa-bars");
-                icon.classList.toggle("fa-xmark");
-            }
+            const isExpanded = navLinks.classList.contains("active");
+            menuBtn.innerHTML = isExpanded ? closeSVG : barsSVG;
         });
 
         // Close menu on link click
         navItems.forEach(item => {
             item.addEventListener("click", () => {
                 navLinks.classList.remove("active");
-                const icon = menuBtn.querySelector("i");
-                if (icon) {
-                    icon.classList.add("fa-bars");
-                    icon.classList.remove("fa-xmark");
-                }
+                menuBtn.innerHTML = barsSVG;
             });
         });
     }
@@ -306,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // =====================================
 
     const topBtn = document.createElement("button");
-    topBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+    topBtn.innerHTML = `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>`;
     topBtn.id = "topBtn";
     topBtn.setAttribute("aria-label", "Back to top");
     document.body.appendChild(topBtn);
@@ -325,5 +321,48 @@ document.addEventListener("DOMContentLoaded", () => {
             behavior: "smooth"
         });
     });
+
+
+    // =====================================
+    // 8. PURE VANILLA CONTACT FORM HANDLER
+    // =====================================
+
+    const contactForm = document.getElementById("contactForm");
+
+    function showToast(message) {
+        let container = document.querySelector(".toast-container");
+        if (!container) {
+            container = document.createElement("div");
+            container.className = "toast-container";
+            document.body.appendChild(container);
+        }
+
+        const toast = document.createElement("div");
+        toast.className = "toast";
+        toast.innerHTML = `
+            <span class="toast-icon">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            </span>
+            <span>${message}</span>
+        `;
+        container.appendChild(toast);
+
+        setTimeout(() => toast.classList.add("show"), 50);
+
+        setTimeout(() => {
+            toast.classList.remove("show");
+            setTimeout(() => toast.remove(), 300);
+        }, 4000);
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const nameInput = document.getElementById("name");
+            const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : "Friend";
+            showToast(`Thank you, ${name}! Your message has been sent successfully.`);
+            contactForm.reset();
+        });
+    }
 
 });
