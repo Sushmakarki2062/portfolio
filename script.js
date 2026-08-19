@@ -255,7 +255,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Prepare Form Data for Formspree
                 const formData = new FormData(contactForm);
-                const actionUrl = contactForm.getAttribute("action") || "https://formspree.io/f/xzepdavw";
+                const actionUrl = contactForm.getAttribute("action") || "https://formspree.io/f/mqpzgvwj";
 
                 fetch(actionUrl, {
                     method: "POST",
