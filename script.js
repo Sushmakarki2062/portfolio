@@ -239,21 +239,71 @@ document.addEventListener("DOMContentLoaded", () => {
                 isValid = false;
             }
 
-            // If Valid -> Show Success Message (Client-Side Only)
+            // If Valid -> Submit to Formspree via AJAX
             if (isValid) {
+                const submitBtn = document.getElementById("submitBtn");
                 const senderName = nameInput.value.trim();
                 
-                formAlert.className = "form-alert success";
-                formAlert.style.display = "block";
-                formAlert.textContent = `Thank you, ${senderName}! Your message has been validated and sent successfully. I will get back to you soon.`;
+                // Disable button & indicate loading state
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.innerHTML = `<span>Sending...</span>`;
+                }
 
-                // Reset Form Fields
-                contactForm.reset();
+                // Hide any previous alert
+                formAlert.style.display = "none";
 
-                // Hide Alert after 6 seconds
-                setTimeout(() => {
-                    formAlert.style.display = "none";
-                }, 6000);
+                // Prepare Form Data for Formspree
+                const formData = new FormData(contactForm);
+                const actionUrl = contactForm.getAttribute("action") || "https://formspree.io/f/xzepdavw";
+
+                fetch(actionUrl, {
+                    method: "POST",
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                })
+                .then(response => {
+                    if (response.ok) {
+                        formAlert.className = "form-alert success";
+                        formAlert.style.display = "block";
+                        formAlert.textContent = `Thank you, ${senderName}! Your message has been sent successfully. I will get back to you soon.`;
+                        contactForm.reset();
+                    } else {
+                        return response.json().then(data => {
+                            formAlert.className = "form-alert error";
+                            formAlert.style.display = "block";
+                            if (data && Object.hasOwn(data, 'errors')) {
+                                formAlert.textContent = data["errors"].map(error => error["message"]).join(", ");
+                            } else {
+                                formAlert.textContent = "Oops! There was a problem submitting your form. Please check your Formspree Form ID.";
+                            }
+                        });
+                    }
+                })
+                .catch(() => {
+                    formAlert.className = "form-alert error";
+                    formAlert.style.display = "block";
+                    formAlert.textContent = "Oops! Network error occurred. Please try again later.";
+                })
+                .finally(() => {
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = `
+                            <span>Send Message</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        `;
+                    }
+                    // Auto-hide alert after 8 seconds
+                    setTimeout(() => {
+                        formAlert.style.display = "none";
+                    }, 8000);
+                });
             }
         });
     }
