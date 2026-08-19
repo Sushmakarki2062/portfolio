@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sushma Karki - Personal Portfolio | BCA Student & Aspiring Web Developer specializing in HTML5, CSS3, JavaScript, PHP & MySQL.">
+    <meta name="description"
+        content="Sushma Karki - Personal Portfolio | BCA Student & Aspiring Web Developer specializing in HTML5, CSS3, JavaScript, PHP & MySQL.">
     <meta name="author" content="Sushma Karki">
     <title>Sushma Karki | BCA Student & Aspiring Web Developer</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- CSS stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -50,8 +52,12 @@
                 <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
 
-            <!-- Header Action Button -->
+            <!-- Header Action Buttons -->
             <div class="nav-actions">
+                <a href="cv.pdf" class="btn btn-sm btn-outline" download="Sushma_Karki_CV.pdf">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                    <span>CV</span>
+                </a>
                 <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
             </div>
         </nav>
@@ -83,36 +89,53 @@
                 </h2>
 
                 <p class="hero-description">
-                    Passionate Bachelor of Computer Applications (BCA) student dedicated to building clean, simple, modern, and user-friendly websites. Enthusiastic about frontend technologies, databases, and continuous learning.
+                    Passionate Bachelor of Computer Applications (BCA) student currently in 4th Semester at Golden Gate International College (TU). Dedicated to building clean, simple, modern, and user-friendly web applications.
                 </p>
 
                 <!-- Hero Action Buttons -->
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">
                         <span>View My Projects</span>
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="cv.pdf" class="btn btn-outline" download="Sushma_Karki_CV.pdf">
+                        <span>Download CV</span>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
                     </a>
                     <a href="#contact" class="btn btn-outline">
                         <span>Contact Me</span>
-                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
                     </a>
                 </div>
 
                 <!-- Hero Quick Stats / Highlights -->
                 <div class="hero-highlights">
                     <div class="highlight-item">
-                        <span class="highlight-value">BCA</span>
+                        <span class="highlight-value">BCA 4th Sem</span>
+                        <span class="highlight-label">Golden Gate Int'l College</span>
+                    </div>
+                    <div class="highlight-divider"></div>
+                    <div class="highlight-item">
+                        <span class="highlight-value">TU</span>
                         <span class="highlight-label">Tribhuvan University</span>
                     </div>
                     <div class="highlight-divider"></div>
                     <div class="highlight-item">
-                        <span class="highlight-value">10+</span>
-                        <span class="highlight-label">Tech Skills</span>
-                    </div>
-                    <div class="highlight-divider"></div>
-                    <div class="highlight-item">
-                        <span class="highlight-value">100%</span>
-                        <span class="highlight-label">Passion & Code</span>
+                        <span class="highlight-value">+2 Science</span>
+                        <span class="highlight-label">Golden Gate Completed</span>
                     </div>
                 </div>
             </div>
@@ -131,16 +154,13 @@
                     <div class="code-card-body">
                         <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
   <span class="code-key">name</span>: <span class="code-str">"Sushma Karki"</span>,
-  <span class="code-key">degree</span>: <span class="code-str">"Bachelor of Computer Application (BCA)"</span>,
-  <span class="code-key">university</span>: <span class="code-str">"Tribhuvan University"</span>,
+  <span class="code-key">degree</span>: <span class="code-str">"BCA (4th Sem Running)"</span>,
+  <span class="code-key">college</span>: <span class="code-str">"Golden Gate International College"</span>,
+  <span class="code-key">university</span>: <span class="code-str">"Tribhuvan University (TU)"</span>,
+  <span class="code-key">highSchool</span>: <span class="code-str">"+2 Science (Golden Gate)"</span>,
   <span class="code-key">role</span>: <span class="code-str">"Aspiring Web Developer"</span>,
   <span class="code-key">location</span>: <span class="code-str">"Kathmandu, Nepal"</span>,
-  <span class="code-key">passions</span>: [
-    <span class="code-str">"Web Development"</span>,
-    <span class="code-str">"Clean UI Design"</span>,
-    <span class="code-str">"Learning Tech"</span>
-  ],
-  <span class="code-key">status</span>: <span class="code-str">"Building innovative web apps!"</span>
+  <span class="code-key">status</span>: <span class="code-str">"Ready for Web Opportunities!"</span>
 };</code></pre>
                     </div>
                     <div class="code-card-footer">
@@ -164,21 +184,26 @@
             <div class="section-header reveal">
                 <span class="section-subtitle">GET TO KNOW ME</span>
                 <h2 class="section-title">About <span class="gradient-text">Sushma Karki</span></h2>
-                <p class="section-description">A glimpse into my educational background, web development journey, and passion for technology.</p>
+                <p class="section-description">A glimpse into my educational background, web development journey, and
+                    passion for technology.</p>
             </div>
 
             <div class="about-grid">
                 <!-- Main About Card -->
                 <div class="about-card main-about-card reveal">
                     <div class="about-card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
                     </div>
                     <h3>Hi, I'm Sushma Karki!</h3>
                     <p>
-                        I am a <strong>Bachelor of Computer Applications (BCA)</strong> student under <strong>Tribhuvan University</strong>. My passion lies in computer applications, logic design, and especially web development.
+                        I am a <strong>Bachelor of Computer Application (BCA)</strong> student currently in my <strong>4th Semester</strong> at <strong>Golden Gate International College, Battisputali</strong>, affiliated with <strong>Tribhuvan University (TU)</strong>. I also completed my <strong>+2 Science stream</strong> from Golden Gate International College.
                     </p>
                     <p>
-                        Ever since I began studying computer application courses, I have been deeply fascinated by how lines of code can create beautiful, interactive, and functional websites that solve real-world problems.
+                        Ever since I began studying computer application courses, I have been deeply fascinated by how lines of code can create beautiful, interactive, and functional web applications that solve real-world problems.
                     </p>
                     <p>
                         I am dedicated to writing clean, organized code and continuously expanding my skillset across frontend web design, backend programming, database management, and essential software tools.
@@ -189,34 +214,54 @@
                 <div class="about-highlights-grid">
                     <div class="about-highlight-card reveal">
                         <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                            </svg>
                         </div>
-                        <h4>BCA Student</h4>
-                        <p>Currently studying Bachelor of Computer Applications at Tribhuvan University with a focus on web technologies & software development.</p>
+                        <h4>BCA 4th Sem (TU)</h4>
+                        <p>Currently in 4th Semester studying BCA at Golden Gate International College with focus on web technologies & software development.</p>
                     </div>
 
                     <div class="about-highlight-card reveal">
                         <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
                         </div>
                         <h4>Web Development</h4>
-                        <p>Enthusiastic about crafting modern, responsive, accessible, and attractive websites using HTML5, CSS3, and JavaScript.</p>
+                        <p>Enthusiastic about crafting modern, responsive, accessible, and attractive websites using
+                            HTML5, CSS3, and JavaScript.</p>
                     </div>
 
                     <div class="about-highlight-card reveal">
                         <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                            </svg>
                         </div>
                         <h4>Continuous Learning</h4>
-                        <p>Always eager to learn new languages, explore modern frameworks, and adopt industry best practices in web development.</p>
+                        <p>Always eager to learn new languages, explore modern frameworks, and adopt industry best
+                            practices in web development.</p>
                     </div>
 
                     <div class="about-highlight-card reveal">
                         <div class="highlight-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                </polygon>
+                            </svg>
                         </div>
                         <h4>User-Centric Design</h4>
-                        <p>Focused on simplicity, legibility, smooth user interfaces, and ensuring web applications function seamlessly across all devices.</p>
+                        <p>Focused on simplicity, legibility, smooth user interfaces, and ensuring web applications
+                            function seamlessly across all devices.</p>
                     </div>
                 </div>
             </div>
@@ -232,7 +277,8 @@
             <div class="section-header reveal">
                 <span class="section-subtitle">MY TECHNICAL PROFICIENCY</span>
                 <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
-                <p class="section-description">Languages, tools, databases, and software applications I work with as a computer application student.</p>
+                <p class="section-description">Languages, tools, databases, and software applications I work with as a
+                    computer application student.</p>
             </div>
 
             <!-- Skill Filter Category Buttons -->
@@ -249,7 +295,10 @@
                 <div class="skill-card reveal" data-category="web">
                     <div class="skill-head">
                         <div class="skill-icon html-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm17.3 5h-13.7l.34 3.8h9.3l-.33 3.8-4.41 1.2-4.4-1.2-.24-2.7H1.66l.48 5.6 7.83 2.17 7.83-2.17 1-10.5H4.8l-.17-2.1h14.17L18.8 5z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm17.3 5h-13.7l.34 3.8h9.3l-.33 3.8-4.41 1.2-4.4-1.2-.24-2.7H1.66l.48 5.6 7.83 2.17 7.83-2.17 1-10.5H4.8l-.17-2.1h14.17L18.8 5z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">HTML5</h3>
@@ -258,7 +307,9 @@
                     </div>
                     <p class="skill-desc">Semantic document structuring, accessibility, clean markup.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
                         <span class="skill-percent">90%</span>
                     </div>
                 </div>
@@ -267,7 +318,10 @@
                 <div class="skill-card reveal" data-category="web">
                     <div class="skill-head">
                         <div class="skill-icon css-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm17.3 5H4.8l.17 2.1h9.35l-.33 3.8-4.02 1.09-4.02-1.09-.24-2.7H1.66l.48 5.6 7.83 2.17 7.83-2.17 1.34-14.8H3.44L3.27 3h15.53L18.8 5z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.5 0h21l-1.91 21.563L11.97 24l-8.564-2.438L1.5 0zm17.3 5H4.8l.17 2.1h9.35l-.33 3.8-4.02 1.09-4.02-1.09-.24-2.7H1.66l.48 5.6 7.83 2.17 7.83-2.17 1.34-14.8H3.44L3.27 3h15.53L18.8 5z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">CSS3</h3>
@@ -276,7 +330,9 @@
                     </div>
                     <p class="skill-desc">Flexbox, CSS Grid, animations, responsive layouts, custom properties.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
                         <span class="skill-percent">85%</span>
                     </div>
                 </div>
@@ -285,7 +341,10 @@
                 <div class="skill-card reveal" data-category="web">
                     <div class="skill-head">
                         <div class="skill-icon js-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-.828-.356-.356-.356-.692 0-1.028.273-.263.784-.367 1.547-.23.633.116 1.157.447 1.503.957.345.508.528 1.173.528 1.956h2.89c0-1.425-.45-2.613-1.34-3.486-1.127-1.1-2.748-1.502-4.84-1.306-1.92.175-3.342.92-4.02 2.12-.5.888-.574 1.846-.226 2.76.43 1.127 1.482 1.895 3.01 2.502.736.31 1.637.604 1.932.888.423.423.4.888-.063 1.258-.456.368-1.28.46-2.19.263-.888-.19-1.523-.687-1.894-1.483-.245-.523-.34-1.178-.34-1.96h-2.89c.01 1.765.55 3.167 1.624 4.092 1.17 1.01 2.894 1.378 4.966 1.097 1.942-.26 3.42-.998 4.2-2.152.612-.907.728-1.99.345-3.136zm-8.87.524V9.6h-2.91v9.232c0 .99-.187 1.685-.56 2.083-.497.53-1.287.69-2.222.482-.676-.148-1.185-.52-1.505-1.1-.22-.4-.308-.946-.264-1.636h-2.87c-.078 1.556.376 2.872 1.34 3.8 1.17 1.127 2.87 1.472 4.912 1.037 1.666-.356 2.83-1.196 3.447-2.482.433-.907.63-2.073.632-3.49z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-.828-.356-.356-.356-.692 0-1.028.273-.263.784-.367 1.547-.23.633.116 1.157.447 1.503.957.345.508.528 1.173.528 1.956h2.89c0-1.425-.45-2.613-1.34-3.486-1.127-1.1-2.748-1.502-4.84-1.306-1.92.175-3.342.92-4.02 2.12-.5.888-.574 1.846-.226 2.76.43 1.127 1.482 1.895 3.01 2.502.736.31 1.637.604 1.932.888.423.423.4.888-.063 1.258-.456.368-1.28.46-2.19.263-.888-.19-1.523-.687-1.894-1.483-.245-.523-.34-1.178-.34-1.96h-2.89c.01 1.765.55 3.167 1.624 4.092 1.17 1.01 2.894 1.378 4.966 1.097 1.942-.26 3.42-.998 4.2-2.152.612-.907.728-1.99.345-3.136zm-8.87.524V9.6h-2.91v9.232c0 .99-.187 1.685-.56 2.083-.497.53-1.287.69-2.222.482-.676-.148-1.185-.52-1.505-1.1-.22-.4-.308-.946-.264-1.636h-2.87c-.078 1.556.376 2.872 1.34 3.8 1.17 1.127 2.87 1.472 4.912 1.037 1.666-.356 2.83-1.196 3.447-2.482.433-.907.63-2.073.632-3.49z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">JavaScript</h3>
@@ -294,7 +353,9 @@
                     </div>
                     <p class="skill-desc">DOM manipulation, ES6 features, interactive UI, form validation.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
                         <span class="skill-percent">80%</span>
                     </div>
                 </div>
@@ -303,7 +364,10 @@
                 <div class="skill-card reveal" data-category="web">
                     <div class="skill-head">
                         <div class="skill-icon php-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-5.4 15.6H4.8v-7.2h3c1.2 0 2.1.3 2.6.9.5.6.7 1.4.7 2.4s-.2 1.8-.7 2.4c-.5.6-1.4.9-2.6.9h-1.2v.6zm7.2 0h-1.8v-7.2h1.8v2.7h2.7v-2.7h1.8v7.2h-1.8v-3h-2.7v3zm-4.5-4.5c.3 0 .6-.1.8-.3.2-.2.3-.5.3-1s-.1-.8-.3-1c-.2-.2-.5-.3-.8-.3h-1.2v2.6h1.2z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm-5.4 15.6H4.8v-7.2h3c1.2 0 2.1.3 2.6.9.5.6.7 1.4.7 2.4s-.2 1.8-.7 2.4c-.5.6-1.4.9-2.6.9h-1.2v.6zm7.2 0h-1.8v-7.2h1.8v2.7h2.7v-2.7h1.8v7.2h-1.8v-3h-2.7v3zm-4.5-4.5c.3 0 .6-.1.8-.3.2-.2.3-.5.3-1s-.1-.8-.3-1c-.2-.2-.5-.3-.8-.3h-1.2v2.6h1.2z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">PHP</h3>
@@ -312,7 +376,9 @@
                     </div>
                     <p class="skill-desc">Server-side scripting, form processing, dynamic web applications.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
                         <span class="skill-percent">75%</span>
                     </div>
                 </div>
@@ -321,7 +387,12 @@
                 <div class="skill-card reveal" data-category="prog">
                     <div class="skill-head">
                         <div class="skill-icon db-bg">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">MySQL</h3>
@@ -330,7 +401,9 @@
                     </div>
                     <p class="skill-desc">Relational database design, SQL queries, table relationships.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 78%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 78%;"></div>
+                        </div>
                         <span class="skill-percent">78%</span>
                     </div>
                 </div>
@@ -339,7 +412,10 @@
                 <div class="skill-card reveal" data-category="tools">
                     <div class="skill-head">
                         <div class="skill-icon git-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2.59 13.41L10.59 21.41C11.37 22.19 12.63 22.19 13.41 21.41L21.41 13.41C22.19 12.63 22.19 11.37 21.41 10.59L13.41 2.59C12.63 1.81 11.37 1.81 10.59 2.59L2.59 10.59C1.81 11.37 1.81 12.63 2.59 13.41ZM14.5 10.5C14.5 11.33 13.83 12 13 12C12.75 12 12.5 11.93 12.3 11.81L10.81 13.3C10.93 13.5 11 13.75 11 14C11 15.1 10.1 16 9 16C7.9 16 7 15.1 7 14C7 12.9 7.9 12 9 12C9.25 12 9.5 12.07 9.7 12.19L11.19 10.7C11.07 10.5 11 10.25 11 10C11 8.9 11.9 8 13 8C14.1 8 15 8.9 15 10C15 10.17 14.97 10.34 14.93 10.5H14.5Z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M2.59 13.41L10.59 21.41C11.37 22.19 12.63 22.19 13.41 21.41L21.41 13.41C22.19 12.63 22.19 11.37 21.41 10.59L13.41 2.59C12.63 1.81 11.37 1.81 10.59 2.59L2.59 10.59C1.81 11.37 1.81 12.63 2.59 13.41ZM14.5 10.5C14.5 11.33 13.83 12 13 12C12.75 12 12.5 11.93 12.3 11.81L10.81 13.3C10.93 13.5 11 13.75 11 14C11 15.1 10.1 16 9 16C7.9 16 7 15.1 7 14C7 12.9 7.9 12 9 12C9.25 12 9.5 12.07 9.7 12.19L11.19 10.7C11.07 10.5 11 10.25 11 10C11 8.9 11.9 8 13 8C14.1 8 15 8.9 15 10C15 10.17 14.97 10.34 14.93 10.5H14.5Z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">Git</h3>
@@ -348,7 +424,9 @@
                     </div>
                     <p class="skill-desc">Code tracking, branching, commits, repository management.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 82%;"></div>
+                        </div>
                         <span class="skill-percent">82%</span>
                     </div>
                 </div>
@@ -357,7 +435,10 @@
                 <div class="skill-card reveal" data-category="tools">
                     <div class="skill-head">
                         <div class="skill-icon github-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">GitHub</h3>
@@ -366,7 +447,9 @@
                     </div>
                     <p class="skill-desc">Project hosting, repository management, GitHub Pages deployment.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
                         <span class="skill-percent">85%</span>
                     </div>
                 </div>
@@ -375,7 +458,20 @@
                 <div class="skill-card reveal" data-category="tools">
                     <div class="skill-head">
                         <div class="skill-icon tally-bg">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"></rect><line x1="8" y1="6" x2="16" y2="6"></line><line x1="16" y1="14" x2="16" y2="14.01"></line><line x1="12" y1="14" x2="12" y2="14.01"></line><line x1="8" y1="14" x2="8" y2="14.01"></line><line x1="16" y1="18" x2="16" y2="18.01"></line><line x1="12" y1="18" x2="12" y2="18.01"></line><line x1="8" y1="18" x2="8" y2="18.01"></line><line x1="16" y1="10" x2="16" y2="10.01"></line><line x1="12" y1="10" x2="12" y2="10.01"></line><line x1="8" y1="10" x2="8" y2="10.01"></line></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                                <line x1="8" y1="6" x2="16" y2="6"></line>
+                                <line x1="16" y1="14" x2="16" y2="14.01"></line>
+                                <line x1="12" y1="14" x2="12" y2="14.01"></line>
+                                <line x1="8" y1="14" x2="8" y2="14.01"></line>
+                                <line x1="16" y1="18" x2="16" y2="18.01"></line>
+                                <line x1="12" y1="18" x2="12" y2="18.01"></line>
+                                <line x1="8" y1="18" x2="8" y2="18.01"></line>
+                                <line x1="16" y1="10" x2="16" y2="10.01"></line>
+                                <line x1="12" y1="10" x2="12" y2="10.01"></line>
+                                <line x1="8" y1="10" x2="8" y2="10.01"></line>
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">Tally</h3>
@@ -384,7 +480,9 @@
                     </div>
                     <p class="skill-desc">Accounting fundamentals, ledger management, financial entries.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
                         <span class="skill-percent">75%</span>
                     </div>
                 </div>
@@ -393,7 +491,11 @@
                 <div class="skill-card reveal" data-category="tools">
                     <div class="skill-head">
                         <div class="skill-icon spss-bg">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                                <polyline points="17 6 23 6 23 12"></polyline>
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">SPSS</h3>
@@ -402,7 +504,9 @@
                     </div>
                     <p class="skill-desc">Statistical data processing, data tables, descriptive analysis.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 72%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 72%;"></div>
+                        </div>
                         <span class="skill-percent">72%</span>
                     </div>
                 </div>
@@ -411,7 +515,11 @@
                 <div class="skill-card reveal" data-category="prog">
                     <div class="skill-head">
                         <div class="skill-icon c-bg">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">C Programming</h3>
@@ -420,7 +528,9 @@
                     </div>
                     <p class="skill-desc">Procedural programming, algorithms, pointers, memory concepts.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 80%;"></div>
+                        </div>
                         <span class="skill-percent">80%</span>
                     </div>
                 </div>
@@ -429,7 +539,10 @@
                 <div class="skill-card reveal" data-category="prog">
                     <div class="skill-head">
                         <div class="skill-icon java-bg">
-                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.87.177 4.908-.215 0 0 .789.477 1.802.215-2.072 1.04-5.263.953-7.363.155 0 0-.411-.534 0-.869zM8.136 16.326s-1.127.697.514.869c2.329.245 4.316.143 6.786-.334 0 0 .504.381 1.344.205-2.614 1.023-6.611.89-8.644-.74zm7.391-3.69c1.077 1.084-.306 2.086-.306 2.086s2.545-1.258 1.41-2.585c-1.076-1.259-2.029-1.391-4.072-2.793-1.472-1.009-1.025-2.529-.168-3.626-2.502 2.378-1.503 4.256.096 4.966 2.115.938 2.027.971 3.04 1.952z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M8.851 18.56s-.917.534.653.714c1.902.218 2.87.177 4.908-.215 0 0 .789.477 1.802.215-2.072 1.04-5.263.953-7.363.155 0 0-.411-.534 0-.869zM8.136 16.326s-1.127.697.514.869c2.329.245 4.316.143 6.786-.334 0 0 .504.381 1.344.205-2.614 1.023-6.611.89-8.644-.74zm7.391-3.69c1.077 1.084-.306 2.086-.306 2.086s2.545-1.258 1.41-2.585c-1.076-1.259-2.029-1.391-4.072-2.793-1.472-1.009-1.025-2.529-.168-3.626-2.502 2.378-1.503 4.256.096 4.966 2.115.938 2.027.971 3.04 1.952z" />
+                            </svg>
                         </div>
                         <div>
                             <h3 class="skill-title">Java</h3>
@@ -438,7 +551,9 @@
                     </div>
                     <p class="skill-desc">Object-oriented programming, classes, inheritance, exception handling.</p>
                     <div class="skill-progress-wrapper">
-                        <div class="skill-progress-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                        <div class="skill-progress-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
                         <span class="skill-percent">75%</span>
                     </div>
                 </div>
@@ -454,108 +569,55 @@
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-subtitle">MY FEATURED WORK</span>
-                <h2 class="section-title">Projects & <span class="gradient-text">Applications</span></h2>
-                <p class="section-description">Academic and personal web development projects I have built or am currently developing.</p>
+                <h2 class="section-title">Featured <span class="gradient-text">Project</span></h2>
+                <p class="section-description">Personal web development project built using modern frontend technologies.</p>
             </div>
 
             <div class="projects-grid">
-                <!-- MAIN FEATURED PROJECT CARD -->
+                <!-- PERSONAL PORTFOLIO WEBSITE PROJECT CARD -->
                 <div class="project-card featured-project reveal">
                     <div class="project-banner">
-                        <div class="banner-badge">Featured Project</div>
+                        <div class="banner-badge">Primary Project</div>
                         <div class="banner-icon-box">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                            </svg>
                         </div>
                     </div>
                     <div class="project-body">
-                        <h3 class="project-title">Earth Smart Overseas Management System</h3>
+                        <h3 class="project-title">Personal Portfolio Website</h3>
                         <p class="project-description">
-                            A web-based Overseas Employment Management System developed to manage candidates, vacancies, applications, and employment-related information efficiently. Features structured forms and clean database integration.
+                            A modern, clean, responsive text-based personal portfolio website built with HTML5, CSS3, and Vanilla JavaScript. Features dynamic hero typing animations, skill category filters, scroll reveal effects, interactive contact form validation, and responsive mobile drawer navigation.
                         </p>
 
                         <!-- Tech Stack Pills -->
                         <div class="project-tags">
                             <span class="p-tag">HTML5</span>
                             <span class="p-tag">CSS3</span>
-                            <span class="p-tag">JavaScript</span>
-                            <span class="p-tag">PHP</span>
-                            <span class="p-tag">MySQL</span>
+                            <span class="p-tag">Vanilla JavaScript</span>
+                            <span class="p-tag">Responsive Design</span>
                         </div>
 
                         <!-- Action Buttons -->
                         <div class="project-actions">
-                            <a href="#contact" class="btn btn-sm btn-primary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                <span>View Project</span>
-                            </a>
-                            <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PLACEHOLDER PROJECT 1 -->
-                <div class="project-card reveal">
-                    <div class="project-banner placeholder-banner-1">
-                        <div class="banner-badge badge-placeholder">Placeholder Project</div>
-                        <div class="banner-icon-box">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Personal Portfolio Website</h3>
-                        <p class="project-description">
-                            A modern, ultra-clean, and responsive text-based personal portfolio website built using HTML5, CSS3, and Vanilla JavaScript to display skills and academic work.
-                        </p>
-
-                        <div class="project-tags">
-                            <span class="p-tag">HTML5</span>
-                            <span class="p-tag">CSS3</span>
-                            <span class="p-tag">JavaScript</span>
-                        </div>
-
-                        <div class="project-actions">
                             <a href="#home" class="btn btn-sm btn-primary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
                                 <span>View Project</span>
                             </a>
-                            <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                                <span>GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- PLACEHOLDER PROJECT 2 -->
-                <div class="project-card reveal">
-                    <div class="project-banner placeholder-banner-2">
-                        <div class="banner-badge badge-placeholder">Placeholder Project</div>
-                        <div class="banner-icon-box">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                        </div>
-                    </div>
-                    <div class="project-body">
-                        <h3 class="project-title">Student Information System</h3>
-                        <p class="project-description">
-                            A desktop & web application concept designed to manage student records, courses, marks, and attendance using Java programming and MySQL databases.
-                        </p>
-
-                        <div class="project-tags">
-                            <span class="p-tag">Java</span>
-                            <span class="p-tag">MySQL</span>
-                            <span class="p-tag">C Programming</span>
-                        </div>
-
-                        <div class="project-actions">
-                            <a href="#contact" class="btn btn-sm btn-primary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-                                <span>View Project</span>
-                            </a>
-                            <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-sm btn-outline">
+                                <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
                                 <span>GitHub</span>
                             </a>
                         </div>
@@ -578,47 +640,43 @@
             </div>
 
             <div class="timeline">
-                <!-- 1. BCA (Current Degree) -->
+                <!-- 1. BCA (Golden Gate International College - TU) -->
                 <div class="timeline-item reveal">
                     <div class="timeline-dot">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-badge-tag">Current Degree</div>
-                        <h3 class="degree-title">Bachelor of Computer Applications (BCA)</h3>
-                        <h4 class="institution-name">Tribhuvan University (TU)</h4>
+                        <div class="timeline-badge-tag">Running - 4th Semester</div>
+                        <h3 class="degree-title">Bachelor of Computer Application (BCA)</h3>
+                        <h4 class="institution-name">Golden Gate International College, Battisputali</h4>
+                        <p class="institution-sub">Affiliated with Tribhuvan University (TU)</p>
                         <p class="timeline-desc">
-                            Currently pursuing BCA with coursework covering Web Technology, Programming in C & Java, Data Structures, Database Management Systems, System Analysis, and Software Engineering.
+                            Currently in 4th semester studying Bachelor of Computer Application (BCA) at Golden Gate International College under Tribhuvan University. Coursework covers Web Technology, Database Management Systems, C & Java Programming, Data Structures, and Software Engineering.
                         </p>
                     </div>
                 </div>
 
-                <!-- 2. +2 High School Placeholder -->
+                <!-- 2. +2 Science (Golden Gate International College) -->
                 <div class="timeline-item reveal">
-                    <div class="timeline-dot placeholder-dot">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4"></path><path d="M18 22V6l-6-4-6 4v16"></path><path d="M6 12h12"></path><path d="M6 16h12"></path></svg>
+                    <div class="timeline-dot">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 22v-4a2 2 0 0 0-2-2v0a2 2 0 0 0-2 2v4"></path>
+                            <path d="M18 22V6l-6-4-6 4v16"></path>
+                            <path d="M6 12h12"></path>
+                            <path d="M6 16h12"></path>
+                        </svg>
                     </div>
                     <div class="timeline-content">
-                        <div class="timeline-badge-tag badge-placeholder">+2 Education (Editable)</div>
-                        <h3 class="degree-title">+2 Higher Secondary Education</h3>
-                        <h4 class="institution-name">[Add College / High School Name Here]</h4>
+                        <div class="timeline-badge-tag">Completed - Science Stream</div>
+                        <h3 class="degree-title">+2 Science Stream</h3>
+                        <h4 class="institution-name">Golden Gate International College, Battisputali</h4>
                         <p class="timeline-desc">
-                            Completed Higher Secondary Education (+2) with focus on Computer Science, Mathematics, and foundational science/management subjects.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- 3. SEE School Placeholder -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot placeholder-dot">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-badge-tag badge-placeholder">SEE (Editable)</div>
-                        <h3 class="degree-title">Secondary Education Examination (SEE)</h3>
-                        <h4 class="institution-name">[Add School Name Here]</h4>
-                        <p class="timeline-desc">
-                            Successfully passed Secondary Education Examination (SEE) with strong academic standing and early interest in computer technology.
+                            Completed Higher Secondary Education (+2) in Science stream from Golden Gate International College, Battisputali, focusing on Computer Science, Mathematics, Physics, and Chemistry.
                         </p>
                     </div>
                 </div>
@@ -635,53 +693,80 @@
             <div class="section-header reveal">
                 <span class="section-subtitle">PRACTICAL FOCUS AREAS</span>
                 <h2 class="section-title">Experience & <span class="gradient-text">Learning</span></h2>
-                <p class="section-description">Key core domains I am actively practicing, building, and strengthening through projects.</p>
+                <p class="section-description">Key core domains I am actively practicing, building, and strengthening
+                    through projects.</p>
             </div>
 
             <div class="experience-grid">
                 <!-- 1. Web Development -->
                 <div class="exp-card reveal">
                     <div class="exp-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
                     </div>
                     <h3>Web Development</h3>
-                    <p>Building structured, accessible, and responsive user interfaces using modern HTML5 semantic tags, flexible CSS styling, and interactive JavaScript.</p>
+                    <p>Building structured, accessible, and responsive user interfaces using modern HTML5 semantic tags,
+                        flexible CSS styling, and interactive JavaScript.</p>
                 </div>
 
                 <!-- 2. Programming -->
                 <div class="exp-card reveal">
                     <div class="exp-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
                     </div>
                     <h3>Programming</h3>
-                    <p>Strengthening core algorithmic logic, object-oriented concepts, and problem-solving through C Programming and Java fundamentals.</p>
+                    <p>Strengthening core algorithmic logic, object-oriented concepts, and problem-solving through C
+                        Programming and Java fundamentals.</p>
                 </div>
 
                 <!-- 3. Database Management -->
                 <div class="exp-card reveal">
                     <div class="exp-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                        </svg>
                     </div>
                     <h3>Database Management</h3>
-                    <p>Designing relational database tables, writing SQL queries, setting up foreign key relationships, and integrating MySQL databases with web projects.</p>
+                    <p>Designing relational database tables, writing SQL queries, setting up foreign key relationships,
+                        and integrating MySQL databases with web projects.</p>
                 </div>
 
                 <!-- 4. Git & GitHub -->
                 <div class="exp-card reveal">
                     <div class="exp-icon">
-                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                        </svg>
                     </div>
                     <h3>Git & GitHub</h3>
-                    <p>Managing code versions, tracking project revisions, collaborating on repositories, and deploying static websites through GitHub Pages.</p>
+                    <p>Managing code versions, tracking project revisions, collaborating on repositories, and deploying
+                        static websites through GitHub Pages.</p>
                 </div>
 
                 <!-- 5. Project Development -->
                 <div class="exp-card reveal">
                     <div class="exp-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
                     </div>
                     <h3>Project Development</h3>
-                    <p>Translating theoretical BCA computer concepts into practical web projects, starting from wireframes to complete functional prototypes.</p>
+                    <p>Translating theoretical BCA computer concepts into practical web projects, starting from
+                        wireframes to complete functional prototypes.</p>
                 </div>
             </div>
         </div>
@@ -696,42 +781,43 @@
             <div class="section-header reveal">
                 <span class="section-subtitle">GET IN TOUCH</span>
                 <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
-                <p class="section-description">Feel free to reach out for collaborations, project inquiries, or web development opportunities.</p>
+                <p class="section-description">Feel free to reach out for collaborations, project inquiries, or web
+                    development opportunities.</p>
             </div>
 
             <div class="contact-wrapper">
                 <!-- Contact Details / Info Cards -->
                 <div class="contact-info reveal">
                     <h3>Contact Information</h3>
-                    <p>You can get in touch with me via email, phone, or by connecting through GitHub and LinkedIn.</p>
+                    <p>You can get in touch with me via email or by connecting through GitHub and LinkedIn.</p>
 
                     <div class="contact-cards-list">
                         <!-- Email -->
                         <div class="contact-item-card">
                             <div class="contact-icon-box">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
                             </div>
                             <div>
                                 <span class="contact-label">Email</span>
-                                <a href="mailto:karkisushma2062@gmail.com" class="contact-value">karkisushma2062@gmail.com</a>
-                            </div>
-                        </div>
-
-                        <!-- Phone Placeholder -->
-                        <div class="contact-item-card">
-                            <div class="contact-icon-box">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            </div>
-                            <div>
-                                <span class="contact-label">Phone</span>
-                                <span class="contact-value">+977 9800000000</span>
+                                <a href="mailto:karkisushma2062@gmail.com"
+                                    class="contact-value">karkisushma2062@gmail.com</a>
                             </div>
                         </div>
 
                         <!-- Location -->
                         <div class="contact-item-card">
                             <div class="contact-icon-box">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
                             </div>
                             <div>
                                 <span class="contact-label">Location</span>
@@ -742,22 +828,30 @@
                         <!-- GitHub -->
                         <div class="contact-item-card">
                             <div class="contact-icon-box">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                                </svg>
                             </div>
                             <div>
                                 <span class="contact-label">GitHub</span>
-                                <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/Sushmakarki2062</a>
+                                <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer"
+                                    class="contact-value">github.com/Sushmakarki2062</a>
                             </div>
                         </div>
 
                         <!-- LinkedIn -->
                         <div class="contact-item-card">
                             <div class="contact-icon-box">
-                                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
                             </div>
                             <div>
                                 <span class="contact-label">LinkedIn</span>
-                                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank" rel="noopener noreferrer" class="contact-value">linkedin.com/in/sushma-karki</a>
+                                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank"
+                                    rel="noopener noreferrer" class="contact-value">linkedin.com/in/sushma-karki</a>
                             </div>
                         </div>
                     </div>
@@ -772,31 +866,39 @@
                     <form id="contactForm" novalidate>
                         <div class="form-group">
                             <label for="name">Your Name <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                            <input type="text" id="name" name="name" class="form-control"
+                                placeholder="Enter your full name" required>
                             <span class="error-msg" id="nameError">Please enter your name.</span>
                         </div>
 
                         <div class="form-group">
                             <label for="email">Your Email <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" class="form-control" placeholder="example@domain.com" required>
+                            <input type="email" id="email" name="email" class="form-control"
+                                placeholder="example@domain.com" required>
                             <span class="error-msg" id="emailError">Please enter a valid email address.</span>
                         </div>
 
                         <div class="form-group">
                             <label for="subject">Subject <span class="required">*</span></label>
-                            <input type="text" id="subject" name="subject" class="form-control" placeholder="e.g. Project Inquiry / Web Development" required>
+                            <input type="text" id="subject" name="subject" class="form-control"
+                                placeholder="e.g. Project Inquiry / Web Development" required>
                             <span class="error-msg" id="subjectError">Please enter a subject.</span>
                         </div>
 
                         <div class="form-group">
                             <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" rows="5" class="form-control" placeholder="Write your message here..." required></textarea>
+                            <textarea id="message" name="message" rows="5" class="form-control"
+                                placeholder="Write your message here..." required></textarea>
                             <span class="error-msg" id="messageError">Please enter your message.</span>
                         </div>
 
                         <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
                             <span>Send Message</span>
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
                         </button>
                     </form>
 
@@ -821,17 +923,32 @@
 
             <!-- Footer Social Media Links -->
             <div class="footer-socials">
-                <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <a href="https://github.com/Sushmakarki2062" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
                 </a>
-                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                <a href="https://www.linkedin.com/in/sushma-karki" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
                 </a>
                 <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
                 </a>
-                <a href="https://www.instagram.com/sushmakarki06/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                <a href="https://www.instagram.com/sushmakarki06/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
                 </a>
             </div>
 
